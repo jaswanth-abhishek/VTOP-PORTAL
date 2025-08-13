@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semester 8 - Timetable & Attendance</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f8f8ff;
+    }
+    header {
+        background: #2b4c7e;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .profile {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .profile img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #2b4c7e;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    nav {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+    a {
+        display: block;
+        background: white;
+        padding: 1.2rem;
+        text-decoration: none;
+        text-align: center;
+        color: #2b4c7e;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+    }
+    a:hover {
+        background: #2b4c7e;
+        color: white;
+        transform: scale(1.05);
+    }
+    .section {
+        padding: 1rem;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    th, td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background: #2b4c7e;
+        color: white;
+    }
+    .badge {
+        padding: 5px 10px;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .cautious { background: orange; }
+    .good { background: blue; }
+    .excellent { background: green; }
+    footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        background: #eee;
+    }
+</style>
+</head>
+<body>
+
+<header>📚 Semester 8 - Timetable & Attendance</header>
+
+<div class="profile">
+    <img src="MYPHOTO.jpg" alt="Profile Photo">
+    <h2>Jaswanth | Reg No: 22BCE0088</h2>
+</div>
+<div class="semester-summary" style="margin-top: 15px; text-align: center; background: #e0e7ff; padding: 1rem; border-radius: 10px; display: inline-block;">
+        <p><strong>CGPA:</strong> 8.71</p>
+        <p><strong>Total Earned Credits:</strong> 133</p>
+        <p><strong>Average Attendance (Current Semester):</strong> 86.33%</p>
+    </div>
+</div>
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="sem1.html">Semester 1</a>
+    <a href="sem2.html">Semester 2</a>
+    <a href="sem3.html">Semester 3</a>
+    <a href="sem4.html">Semester 4</a>
+    <a href="sem5.html">Semester 5</a>
+    <a href="sem6.html">Semester 6</a>
+    <a href="sem7.html">Semester 7</a>
+    <a href="sem8.html">Semester 8</a>
+</nav>
+
+<div class="section">
+    <h2>📅 Weekly Timetable</h2>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:15 - 12:15</th>
+            <th>1:00 - 2:00</th>
+            <th>2:00 - 3:00</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Data Science</td>
+            <td>Machine Learning</td>
+            <td>Cloud Computing</td>
+            <td>AI Lab</td>
+            <td>Project Work</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Machine Learning</td>
+            <td>Data Science</td>
+            <td>Cloud Computing</td>
+            <td>Project Work</td>
+            <td>Elective</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>AI Lab</td>
+            <td>Machine Learning</td>
+            <td>Data Science</td>
+            <td>Cloud Computing</td>
+            <td>Project Work</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Elective</td>
+            <td>Cloud Computing</td>
+            <td>Data Science</td>
+            <td>Project Work</td>
+            <td>AI Lab</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Machine Learning</td>
+            <td>Data Science</td>
+            <td>Elective</td>
+            <td>Project Work</td>
+            <td>Cloud Computing</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>📊 Attendance</h2>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Attendance %</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Data Science</td>
+            <td>78%</td>
+            <td><span class="badge cautious">Be Cautious</span></td>
+        </tr>
+        <tr>
+            <td>Machine Learning</td>
+            <td>85%</td>
+            <td><span class="badge good">Good</span></td>
+        </tr>
+        <tr>
+            <td>Cloud Computing</td>
+            <td>92%</td>
+            <td><span class="badge excellent">Excellent</span></td>
+        </tr>
+        <tr>
+            <td>AI Lab</td>
+            <td>88%</td>
+            <td><span class="badge good">Good</span></td>
+        </tr>
+        <tr>
+            <td>Project Work</td>
+            <td>95%</td>
+            <td><span class="badge excellent">Excellent</span></td>
+        </tr>
+        <tr>
+            <td>Elective</td>
+            <td>80%</td>
+            <td><span class="badge good">Good</span></td>
+        </tr>
+    </table>
+</div>
+
+<footer>
+    Created by Jaswanth | Reg No: 22BCE0088
+</footer>
+
+</body>
+</html>
