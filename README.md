@@ -21,24 +21,6 @@ A web-based portal for managing and viewing VIT semester timetables and attendan
 
 ---
 
-## Project Structure  
-VTOP-PORTAL/
-├── index.html
-├── sem1.html
-├── sem2.html
-├── sem3.html
-├── sem4.html
-├── sem5.html
-├── sem6.html
-├── sem7.html
-├── sem8.html
-├── style.css
-├── myphoto.jpg
-└── .vscode/settings.json
-
-
----
-
 ## How to Use
 
 1. Clone the repository:
